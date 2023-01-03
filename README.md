@@ -1,5 +1,5 @@
 # ChatGPT-3 Discord Bot
-This clientsided chatbot uses OpenAI's and Discord's APIs to participate in server channels in real time. 
+This clientsided chatbot with multiple commands uses OpenAI's and Discord's APIs to participate in server channels in real time. 
 
 # Functionality and commands
 Each command should be typed prior to your prompt (ex. !code create a python script that prints out the HWID for the HDD)

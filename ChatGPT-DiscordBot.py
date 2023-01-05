@@ -23,8 +23,17 @@ async def on_member_join(member):
 async def on_message(message):
     if message.author == client.user:
         return
-
-    if message.content.startswith("!image"):
+    
+    if message.content.startswith("!help"):
+        response = "Here are the available commands:\n"
+        response += "!image: Generates an image based on a prompt using OpenAI's ChatGPT model image-alpha-001.\n"
+        response += "!chat: Answers prompts using OpenAI's ChatGPT.\n"
+        response += "!code: Answers prompts using OpenAI's ChatGPT and puts the answer in a code box (for easy copy and pasting).\n"
+        response += "!creative: Answers prompts using OpenAI's ChatGPT with more variety and creativity (look up ChatGPT temperature settings, it is set to 1 with this command and 0.5 for the other).\n"
+        response += "!cc: Answers prompts using OpenAI's ChatGPT with both !creative and !code.\n"
+        await message.channel.send(response)
+        
+    elif message.content.startswith("!image"):
         prompt = message.content[7:]
         loading_message = await message.channel.send("***Generating image, please wait...***")
         api_url = "https://api.openai.com/v1/images/generations"

@@ -36,5 +36,7 @@ Step 2:
 Run ChatGPT-DiscordBot.py
 ```
 
-# Notes
-The bot can sometimes glitch or take more time to respond usually because of the nature of the prompt. All of the issues I've encountered have resolved themselves by waiting and giving the bot more time to process a response.
+# Changelog and notes
+The bot can sometimes glitch or take more time to respond usually because of the nature of the prompt. All of the issues I've encountered have resolved themselves by waiting and giving the bot more time to process a response. If the response is stuck at "generating response" then retype the prompt or slightly modify it.
+
+1-5-2023: added !help command

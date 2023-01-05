@@ -62,7 +62,7 @@ async def on_message(message):
         await loading_message.delete()
 
     elif message.content.startswith("!code"):
-        prompt = message.content[7:]
+        prompt = message.content[6:]
         loading_message = await message.channel.send("***Generating response, please wait...***")
         response_lines = generate_response(prompt, 0.5)
         if isinstance(response_lines, str):
